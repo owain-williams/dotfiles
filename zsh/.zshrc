@@ -1,3 +1,4 @@
+export PATH="/opt/homebrew/bin:$PATH"
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/owainwilliams/.zsh/completions:"* ]]; then export FPATH="/Users/owainwilliams/.zsh/completions:$FPATH"; fi
 export LC_ALL=en_US.UTF-8
