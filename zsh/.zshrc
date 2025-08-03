@@ -24,7 +24,7 @@ alias csp="cd ~ && ./cloud-sql-proxy --port 5433 --auto-iam-authn bolventor-dev-
 alias "zshrc"="vim ~/.zshrc"
 alias "vimconf"="vim ~/.config/nvim"
 alias y=yazi
-alias v="vim ."
+alias v=nvim
 alias dev="pnpm dev"
 alias nuke="cd && ./delete_node_modules.sh && cd bolventor && fnm use 20 && pnpm i && pnpm build"
 
