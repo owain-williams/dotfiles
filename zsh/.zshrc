@@ -59,6 +59,13 @@ export PUBSUB_EMULATOR_HOST=localhost:8085
 export PUBSUB_PROJECT_ID=bolventor-dev-b586
 export PUBSUB_ENDPOINT=localhost:8085
 
+# Load nvim environment variables
+if [ -f ~/.config/nvim/.env ]; then
+  set -a
+  source ~/.config/nvim/.env
+  set +a
+fi
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/owainwilliams/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/owainwilliams/google-cloud-sdk/path.zsh.inc'; fi
 
