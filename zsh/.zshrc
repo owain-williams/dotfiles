@@ -24,7 +24,7 @@ alias csp="cd ~ && ./cloud-sql-proxy --port 5433 --auto-iam-authn bolventor-dev-
 alias "zshrc"="vim ~/.zshrc"
 alias "vimconf"="vim ~/.config/nvim"
 alias y=yazi
-alias v="vim ."
+alias v=nvim
 alias dev="pnpm dev"
 alias nuke="cd ~/bolventor && find apps packages -maxdepth 2 -type d -name "node_modules" -exec rm -rf {} \; 2>/dev/null && pnpm i && pnpm build && cd api && pnpm prisma generate && pnpm prisma migrate reset"
 alias nukeforce="cd ~/bolventor && find apps packages -maxdepth 2 -type d -name "node_modules" -exec rm -rf {} \; 2>/dev/null && pnpm i && turbo run build --go-fallback --force && cd api && pnpm prisma generate && pnpm prisma migrate reset"
@@ -60,6 +60,13 @@ export EDITOR=nvim
 export PUBSUB_EMULATOR_HOST=localhost:8085
 export PUBSUB_PROJECT_ID=bolventor-dev-b586
 export PUBSUB_ENDPOINT=localhost:8085
+
+# Load nvim environment variables
+if [ -f ~/.config/nvim/.env ]; then
+  set -a
+  source ~/.config/nvim/.env
+  set +a
+fi
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/owainwilliams/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/owainwilliams/google-cloud-sdk/path.zsh.inc'; fi
