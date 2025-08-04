@@ -26,7 +26,9 @@ alias "vimconf"="vim ~/.config/nvim"
 alias y=yazi
 alias v="vim ."
 alias dev="pnpm dev"
-alias nuke="cd && ./delete_node_modules.sh && cd bolventor && fnm use 20 && pnpm i && pnpm build"
+alias nuke="cd ~/bolventor && find apps packages -maxdepth 2 -type d -name "node_modules" -exec rm -rf {} \; 2>/dev/null && pnpm i && pnpm build && cd api && pnpm prisma generate && pnpm prisma migrate reset"
+alias nukeforce="cd ~/bolventor && find apps packages -maxdepth 2 -type d -name "node_modules" -exec rm -rf {} \; 2>/dev/null && pnpm i && turbo run build --go-fallback --force && cd api && pnpm prisma generate && pnpm prisma migrate reset"
+alias c=clear
 
 # pnpm
 export PNPM_HOME="/Users/owainwilliams/Library/pnpm"
