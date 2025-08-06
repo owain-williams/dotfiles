@@ -21,6 +21,7 @@ alias ls=eza
 alias ll=eza\ -ll
 alias la=eza\ -la
 alias csp="cd ~ && ./cloud-sql-proxy --port 5433 --auto-iam-authn bolventor-dev-b586:europe-west2:main-primary-400d4289-clone"
+alias cspprod="cd ~ && ./cloud-sql-proxy --port 5434 --auto-iam-authn bolventor-prod-1ea8:europe-west2:main-primary-167921d8-clone-replica"
 alias "zshrc"="vim ~/.zshrc"
 alias "vimconf"="vim ~/.config/nvim"
 alias y=yazi
