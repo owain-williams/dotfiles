@@ -74,3 +74,17 @@ if [ -f '/Users/owainwilliams/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/o
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/owainwilliams/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/owainwilliams/google-cloud-sdk/completion.zsh.inc'; fi
+
+# fzf-tab configuration
+source ~/.fzf-tab/fzf-tab.plugin.zsh
+
+# Enable fzf tab completion
+autoload -U compinit
+compinit
+
+# fzf-tab settings
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:ls:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:*:*' fzf-preview 'echo "$desc"'
+zstyle ':fzf-tab:*' fzf-flags --height=50% --layout=reverse
+zstyle ':fzf-tab:*' switch-group ',' '.'
