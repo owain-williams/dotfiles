@@ -7,6 +7,7 @@ return {
       or "make",
   event = "VeryLazy",
   version = false, -- Never set this value to "*"! Never!
+  mode = "legacy",
   ---@module 'avante'
   ---@type avante.Config
   opts = {
