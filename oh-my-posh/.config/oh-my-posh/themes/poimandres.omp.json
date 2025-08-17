@@ -1,0 +1,127 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "cache_duration": "none",
+            "max_depth": 3,
+            "style": "folder"
+          },
+          "foreground": "#1b1e28",
+          "background": "#ADD7FF",
+          "type": "path",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue0b0",
+          "foreground": "#ADD7FF",
+          "background": "#303340",
+          "type": "text",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "branch_icon": " ",
+            "cache_duration": "none",
+            "fetch_status": true,
+            "fetch_upstream_icon": true
+          },
+          "foreground": "#a6accd",
+          "background": "#303340",
+          "type": "git",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue0b0",
+          "foreground": "#303340",
+          "background": "#1b1e28",
+          "type": "text",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "always_enabled": false,
+            "cache_duration": "none",
+            "style": "austin",
+            "threshold": 500
+          },
+          "foreground": "#767c9d",
+          "background": "#1b1e28",
+          "type": "executiontime",
+          "style": "plain"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "properties": {
+            "cache_duration": "none",
+            "display_mode": "files",
+            "fetch_package_manager": false,
+            "home_enabled": false
+          },
+          "foreground": "#5DE4c7",
+          "background": "#1b1e28",
+          "type": "node",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "display_mode": "files",
+            "fetch_version": true,
+            "fetch_virtual_env": false
+          },
+          "foreground": "#fffac2",
+          "background": "#1b1e28",
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "time_format": "15:04"
+          },
+          "foreground": "#89ddff",
+          "background": "#1b1e28",
+          "type": "time",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "❯ ",
+          "foreground": "#d0679d",
+          "type": "text",
+          "style": "plain"
+        }
+      ],
+      "newline": true
+    }
+  ],
+  "version": 3,
+  "final_space": true
+}

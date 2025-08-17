@@ -12,7 +12,7 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 eval "$(fnm env --use-on-cd --version-file-strategy=recursive --resolve-engines --corepack-enabled --shell zsh)"
-eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/amro.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/themes/poimandres.omp.json)"
 
 alias vim=nvim
 alias vi=nvim
