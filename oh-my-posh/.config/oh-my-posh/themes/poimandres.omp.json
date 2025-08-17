@@ -97,7 +97,7 @@
             "cache_duration": "none",
             "time_format": "15:04"
           },
-          "foreground": "#89ddff",
+          "foreground": "#5DE4c7",
           "background": "#1b1e28",
           "type": "time",
           "style": "powerline",
