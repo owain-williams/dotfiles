@@ -5,3 +5,4 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set nu")
 
 require("config.lazy")
+require("config.keymaps")
