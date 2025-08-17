@@ -20,6 +20,7 @@
   "mini.pairs": { "branch": "main", "commit": "1e1ca3f60f58d4050bf814902b472eec9963a5dd" },
   "mini.pick": { "branch": "main", "commit": "82ec629ca108c7b96b8b9bb733d235b39e137690" },
   "mini.splitjoin": { "branch": "main", "commit": "51909e9883ab206f5a92deb9ca685317387586a4" },
+  "mini.surround": { "branch": "main", "commit": "7a8606333affe7ce637a0ba91bbafc46fc42bfa0" },
   "none-ls.nvim": { "branch": "main", "commit": "5fcb73913a9290f78097e34420fe0e6130c5c33c" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
   "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },
